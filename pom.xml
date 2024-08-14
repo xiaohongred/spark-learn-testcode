@@ -76,6 +76,21 @@
             <version>2.15.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.27</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.clickhouse</groupId>
+            <artifactId>clickhouse-jdbc</artifactId>
+            <version>0.6.0</version>
+            <!-- use uber jar with all dependencies included, change classifier to http for smaller jar -->
+            <classifier>all</classifier>
+        </dependency>
+
 
     </dependencies>
 
